@@ -25,8 +25,10 @@ Users who wish to extract raw data from MOIRA can use the Data Query module. Thi
 #### Time Series Charts
 A key component of the new MOIRA system is time series analysis. Because MOIRA queries can be grouped by time period as well as other demographic or geographic variables, the results can be charted over time to compare mortality rates among different regions, socioeconomic clusters and demographics.
 ##### Race and Sex
+A growing body of public health literature has emphasized racial disparities in health and mortality. The Race and Sex time chart module allows users to compare mortality rates among different racial groups over time for any cause of death. The example below shows how the racial disparities in drug overdose deaths disappeared over the course of the 1990s and early 2000s before the onset of the opioid epidemic in 2015.
 ![plotRS](plotRS_example.png)
 ##### Socioeconomic Regions
+Health disparities exist along socioeconomic lines as well. This module allows users to compare mortality rates by 8 socioeconomic regional subgroups, as proposed by Author et al., 2016. The subgroup classificartions range from Young, Urban, Mid/High SES to Rural, Mid/Low SES and allow us to visualize the differential health outcomes experienced by rural and urban Americans. This example plots car accident mortality rates over time by SES cluster:
 ![plotSES](plotSES_example.png)
 #### Geography
 Another key component of MOIRA is geography. Data is queried from MOIRA by geographic region at the national, state or county level. In this module, the results are simply mapped to their corresponding geography within a JSON file of the United States to render a choropleth or bubble map of mortality rates (or deaths) for a selected time period, region(s), and cause(s) of death.
@@ -37,6 +39,7 @@ The map below shows a map of the lung cancer mortality rates across the US for t
 The map below shows a US state map with a bubble at each centroid with a radius corresponding to the number of deaths over the selected time period. The legend plots the 25th, 50th and 75th percentile values.
 ![bubblemap](bubblemap_example.png)
 #### Flexible Clustering
+This module allows the user to run a flexible spatial scan test on the mortality rates from a selection of US counties. The spatial scan statistic proposed by Kulldorff (1997) has been applied to a wide variety of epidemiological studies for mortality cluster detection. This scan statistic, however, uses a circular window to define the potential cluster areas and thus has difficulty in correctly detecting irregularly shaped clusters that are more realistic. The flexible spatial scan statistic proposed by Tango and Takahashi (2005) is able to detect clusters with any shape reasonably well, as the relative risk of the cluster increases via Monte Carlo simulation. This contributes to the computational time required for clustering
 ![flexscan_example](flexscan_example.png)
 #### Temporal Clustering
 ![temporal_example](temporal_example.png)
