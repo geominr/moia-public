@@ -7,16 +7,16 @@ This repository contains the underlying codebase for the MOIRA web prototype, wh
 The following instructions detail how to install, run and make changes to the MOIRA web
 
 ### Navigate to:
-* [Modules](https://github.com/geominr/MOIRA#components)
-    * [Data Query](https://github.com/geominr/MOIRA#data-query)
-    * [Time Series Chart](https://github.com/geominr/MOIRA#time-series-charts)
-    * [Geography](https://github.com/geominr/MOIRA#geography)
-    * [Flexible (Spatial) Clustering](https://github.com/geominr/MOIRA#flexible-clustering)
-    * [Temporal Clustering](https://github.com/geominr/MOIRA#temporal-clustering)
-    * [Secondary Data](https://github.com/geominr/MOIRA#secondary-data)
-* [Components](https://github.com/geominr/MOIRA#components)
-* [Adding an Analytical Module](https://github.com/geominr/MOIRA#adding-an-analytical-module)
-* [Incorporating Secondary Data with MOIRA](https://github.com/geominr/MOIRA#adding-secondary-data-to-moira)
+* [Modules](https://github.com/geominr/moira-public#components)
+    * [Data Query](https://github.com/geominr/moira-public#data-query)
+    * [Time Series Chart](https://github.com/geominr/moira-public#time-series-charts)
+    * [Geography](https://github.com/geominr/moira-public#geography)
+    * [Flexible (Spatial) Clustering](https://github.com/geominr/moira-public#flexible-clustering)
+    * [Temporal Clustering](https://github.com/geominr/moira-public#temporal-clustering)
+    * [Secondary Data](https://github.com/geominr/moira-public#secondary-data)
+* [Components](https://github.com/geominr/moira-public#components)
+* [Adding an Analytical Module](https://github.com/geominr/moira-public#adding-an-analytical-module)
+* [Incorporating Secondary Data with MOIRA](https://github.com/geominr/moira-public#adding-secondary-data-to-moira)
 
 ## Modules
 #### Data Query
@@ -43,7 +43,7 @@ The map below shows a US state map with a bubble at each centroid with a radius 
 #### Secondary Data
 
 
-[Back to top](https://github.com/geominr/MOIRA#moira-mortality-information-research-analytics)
+[Back to top](https://github.com/geominr/moira-public#moira-mortality-information-research-analytics)
 ## Components
 The backend system is made up of the following components:
 ### Component 1: [/accounts](https://github.com/geominr/MOIRA/tree/master/accounts)
@@ -165,7 +165,7 @@ This folder contains python files which initialize system settings
 * [wsgi.py](https://github.com/geominr/MOIRA/blob/master/moira_2019/wsgi.py) 
 
 
-[Back to top](https://github.com/geominr/MOIRA#moira-mortality-information-research-analytics)
+[Back to top](https://github.com/geominr/moira-public#moira-mortality-information-research-analytics)
 ## Adding an Analytical Module
 In the following code snippets, we demonstrate how to add a new module to the MOIRA system. This example is for Temporal Clustering, which creates a [d3heatmap](https://www.rdocumentation.org/packages/d3heatmap/versions/0.6.1.2/topics/d3heatmap) using MOIRA data. This output allows users to analyze trends and relationships between different mortality groupings over time. This is what the output will look like. Drug-induced deaths by county in PA (2010-2017):
 ![d3heatmap](d3heatmap_example.png)
@@ -395,7 +395,7 @@ In the following code snippets, we demonstrate how to add a new option to the
 
 
 
-[Back to top](https://github.com/geominr/MOIRA#moira-mortality-information-research-analytics)
+[Back to top](https://github.com/geominr/moira-public#moira-mortality-information-research-analytics)
 ## Adding Secondary Data to MOIRA
 In the following code snippets, we demonstrate how to add secondary data into a MOIRA module. This example maps mortality rates along with unemployment rates ([Labor force data by county, annual averages 1990-2018. Bureau of Labor Statistics](https://www.bls.gov/lau/)). To create this module, we will replicate the geography module; specifically the bubble map. Using the same code, we will simply merge our MOIRA API result to the unemployment rates by the county FIPS code. 
 ### Step 1: Replicate code
@@ -403,4 +403,4 @@ In the following code snippets, we demonstrate how to add secondary data into a 
 ### Step 3: Change JavaScript code
 Next we change our javascript code to color the bubbles by the unemployment rate rather than just a uniform red color.
 
-
+[Back to top](https://github.com/geominr/moira-public#moira-mortality-information-research-analytics)
