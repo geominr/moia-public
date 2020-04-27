@@ -1,10 +1,7 @@
 # MOIRA: Mortality Information Research Analytics
 The University of Pittsburgh developed and has, since 1980, maintained the Mortality Information and Research Analytics system. MOIRA was built to facilitate the extraction and visualization of US mortality and population data in a standardized format. The source data are provided by the National Center for Health Statistics and the US Census Bureau.
 
-This repository contains the underlying codebase for the MOIRA web prototype, which was built using the Django web framework in Python. For an introduction to development in Django, please reference the [Django documentation](https://docs.djangoproject.com/en/3.0/) and this helpful [YouTube tutorial](https://www.youtube.com/playlist?list=PLw02n0FEB3E3VSHjyYMcFadtQORvl1Ssj).
-
-## Getting started
-The following instructions detail how to install, run and make changes to the MOIRA web
+This repository provides a description of the MOIRA web prototype, built by Raanan Gurewitsch using the Django web framework in Python. For an introduction to development in Django, please reference the [Django documentation](https://docs.djangoproject.com/en/3.0/) and this helpful [YouTube tutorial](https://www.youtube.com/playlist?list=PLw02n0FEB3E3VSHjyYMcFadtQORvl1Ssj).
 
 ### Navigate to:
 * [Modules](https://github.com/geominr/moira-public#components)
