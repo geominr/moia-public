@@ -38,10 +38,6 @@ The map below shows a US state map with a bubble at each centroid with a radius 
 #### Flexible Clustering
 This module allows the user to run a flexible spatial scan test on the mortality rates from a selection of US counties. The spatial scan statistic proposed by Kulldorff (1997) has been applied to a wide variety of epidemiological studies for mortality cluster detection. This scan statistic, however, uses a circular window to define the potential cluster areas and thus has difficulty in correctly detecting irregularly shaped clusters that are more realistic. The flexible spatial scan statistic proposed by Tango and Takahashi (2005) is able to detect clusters with any shape reasonably well, as the relative risk of the cluster increases via Monte Carlo simulation. This contributes to the computational time required for clustering
 ![flexscan_example](flexscan_example.png)
-#### Temporal Clustering
-![temporal_example](temporal_example.png)
-#### Secondary Data
-
 
 [Back to top](https://github.com/geominr/moira-public#moira-mortality-information-research-analytics)
 ## Components
